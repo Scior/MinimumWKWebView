@@ -25,5 +25,6 @@ opt_in_rules:
 excluded:
 - Pods/
 - Carthage/
+- vendor/bundle
 
 line_length: 300

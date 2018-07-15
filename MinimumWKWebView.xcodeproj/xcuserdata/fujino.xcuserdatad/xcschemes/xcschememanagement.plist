@@ -9,6 +9,34 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>MinimumWKWebViewTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>MinimumWKWebViewUITests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>6BA3180820F9A91400CF961B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6BA3181C20F9A91600CF961B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6BA3182720F9A91600CF961B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

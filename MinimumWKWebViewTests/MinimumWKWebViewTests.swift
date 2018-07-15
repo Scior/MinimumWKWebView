@@ -21,9 +21,12 @@ class MinimumWKWebViewTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testWillFail() {
+        XCTAssert(0 == 1)
+    }
+    
+    func testWillSuccess() {
+        XCTAssert(1 == 1)
     }
     
     func testPerformanceExample() {
