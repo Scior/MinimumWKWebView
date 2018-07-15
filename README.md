@@ -1,13 +1,18 @@
+# Note
+
 ## swiftlint
+
 <https://github.com/realm/SwiftLint>
 
 Install swiftlint with homebrew.
-```
+
+```shell
 brew install swiftlint
 ```
 
 Add some script to "Run Script" in "Build Phases".
-```
+
+```shell
 if which swiftlint >/dev/null; then
     swiftlint autocorrect
     swiftlint
@@ -18,7 +23,62 @@ fi
 
 Edit `.swiftlint.yml`.
 
+## Fastlane
+
+<https://github.com/fastlane/fastlane>
+
+Install fastlane with homebrew.
+
+```shell
+brew cask install fastlane
+```
+
+Add `Gemfile` to the project root.
+
+```text
+source "https://rubygems.org"
+
+gem "fastlane"
+```
+
+And then,
+
+```shell
+# with bundler
+bundle install --path=vendor/bundle
+bundle exec fastlane init
+```
+
+Edit `fastfile/Fastfile` to define jobs.
+
+```yaml
+# Sample
+default_platform(:ios)
+
+platform :ios do
+  desc "Test"
+  lane :test do
+    run_tests(devices: ["iPhone 6s", "iPhone 8 Plus"])
+  end
+end
+```
+
+An example command to run tests:
+
+```shell
+bundle exec fastlane test
+```
+
+To shut up swiftlint against files in `vector/bundle`, 
+add an exclusion rule to `.swiftlint.yml`.
+
+```yaml
+excluded:
+- vendor/bundle
+```
+
 ## License
+
 MIT License.
 
 Other OSS licenses are in `/licenses`.
