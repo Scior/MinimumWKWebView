@@ -21,10 +21,6 @@ class MinimumWKWebViewTests: XCTestCase {
         super.tearDown()
     }
     
-    func testWillFail() {
-        XCTAssert(0 == 1)
-    }
-    
     func testWillSuccess() {
         XCTAssert(1 == 1)
     }
