@@ -17,6 +17,12 @@ default_platform(:ios)
 platform :ios do
   desc "Test"
   lane :test do
-    run_tests(devices: ["iPhone 6s", "iPhone 8 Plus"])
+    run_tests(devices: ["iPhone 8 Plus"])
+  end
+
+  desc "Test without build"
+  lane :testonly do
+    run_tests(devices: ["iPhone 8 Plus"],
+    test_without_building: true)
   end
 end
