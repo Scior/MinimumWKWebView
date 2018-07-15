@@ -1,5 +1,8 @@
 # Note
 
+[![Build Status](https://travis-ci.org/Scior/MinimumWKWebView.svg?branch=master)](https://travis-ci.org/Scior/MinimumWKWebView)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 ## swiftlint
 
 <https://github.com/realm/SwiftLint>
@@ -76,6 +79,23 @@ add an exclusion rule to `.swiftlint.yml`.
 excluded:
 - vendor/bundle
 ```
+
+## Travis CI
+
+Doc: <https://docs.travis-ci.com/>  
+My page:
+<https://travis-ci.org/Scior/MinimumWKWebView>
+
+Create `.travis.yml`.
+
+```yml
+language: objective-c
+osx_image: xcode9.4
+
+script: fastlane test
+```
+
+Connect Travis CI with your GitHub and enable a trigger on your Travis page.
 
 ## License
 
