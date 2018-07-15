@@ -17,3 +17,8 @@ fi
 ```
 
 Edit `.swiftlint.yml`.
+
+## License
+MIT License.
+
+Other OSS licenses are in `/licenses`.
