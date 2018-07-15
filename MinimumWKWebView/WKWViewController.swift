@@ -24,7 +24,6 @@ class WKWViewController: UIViewController, WKNavigationDelegate {
             wkWebView.load(request)
         }
         
-        
         view.addSubview(wkWebView)
     }
 
@@ -37,4 +36,3 @@ class WKWViewController: UIViewController, WKNavigationDelegate {
         decisionHandler(.allow)
     }
 }
-
