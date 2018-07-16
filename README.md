@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/Scior/MinimumWKWebView.svg?branch=master)](https://travis-ci.org/Scior/MinimumWKWebView)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## swiftlint
+## SwiftLint
 
 <https://github.com/realm/SwiftLint>
 
@@ -26,7 +26,7 @@ fi
 
 Edit `.swiftlint.yml`.
 
-## Fastlane
+## fastlane
 
 <https://github.com/fastlane/fastlane>
 
@@ -48,7 +48,7 @@ And then,
 
 ```shell
 # with bundler
-bundle install --path=vendor/bundle
+bundle install --path vendor/bundle
 bundle exec fastlane init
 ```
 
