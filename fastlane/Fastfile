@@ -36,7 +36,7 @@ platform :ios do
 
     slather(
       proj: "MinimumWKWebView.xcodeproj",
-      scheme: "MinimumWKWebView",
+      scheme: "MinimumWKWebView",
       travis: true,
       coveralls: true
     )
