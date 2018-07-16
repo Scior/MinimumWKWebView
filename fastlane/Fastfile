@@ -19,4 +19,26 @@ platform :ios do
   lane :test do
     scan
   end
+
+  desc "Local test with coverage"
+  lane :local_cov do
+    test
+
+    slather(
+      proj: "MinimumWKWebView.xcodeproj",
+      scheme: "MinimumWKWebView"
+    )
+  end
+
+  desc "CI test with coverage"
+  lane :coverage do
+    test
+
+    slather(
+      proj: "MinimumWKWebView.xcodeproj",
+      scheme: "MinimumWKWebView",
+      travis: true,
+      coveralls: true
+    )
+  end
 end
