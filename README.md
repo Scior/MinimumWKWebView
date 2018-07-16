@@ -1,6 +1,7 @@
 # Note
 
 [![Build Status](https://travis-ci.org/Scior/MinimumWKWebView.svg?branch=master)](https://travis-ci.org/Scior/MinimumWKWebView)
+[![Coverage Status](https://coveralls.io/repos/github/Scior/MinimumWKWebView/badge.svg)](https://coveralls.io/github/Scior/MinimumWKWebView)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## SwiftLint
