@@ -21,11 +21,6 @@ or alternatively using `brew cask install fastlane`
 fastlane ios test
 ```
 Test
-### ios testonly
-```
-fastlane ios testonly
-```
-Test without build
 
 ----
 
