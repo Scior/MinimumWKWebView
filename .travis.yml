@@ -6,3 +6,5 @@ script: fastlane test
 branches:
   only:
     - master
+    - ci-test
+
