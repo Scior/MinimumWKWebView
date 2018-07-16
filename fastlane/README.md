@@ -21,11 +21,16 @@ or alternatively using `brew cask install fastlane`
 fastlane ios test
 ```
 Test
-### ios testonly
+### ios local_cov
 ```
-fastlane ios testonly
+fastlane ios local_cov
 ```
-Test without build
+Local test with coverage
+### ios coverage
+```
+fastlane ios coverage
+```
+CI test with coverage
 
 ----
 

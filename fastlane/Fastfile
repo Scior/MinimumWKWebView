@@ -17,12 +17,28 @@ default_platform(:ios)
 platform :ios do
   desc "Test"
   lane :test do
-    run_tests(devices: ["iPhone 8 Plus"])
+    scan
   end
 
-  desc "Test without build"
-  lane :testonly do
-    run_tests(devices: ["iPhone 8 Plus"],
-    test_without_building: true)
+  desc "Local test with coverage"
+  lane :local_cov do
+    test
+
+    slather(
+      proj: "MinimumWKWebView.xcodeproj",
+      scheme: "MinimumWKWebView"
+    )
+  end
+
+  desc "CI test with coverage"
+  lane :coverage do
+    test
+
+    slather(
+      proj: "MinimumWKWebView.xcodeproj",
+      scheme: "MinimumWKWebView",
+      travis: true,
+      coveralls: true
+    )
   end
 end
