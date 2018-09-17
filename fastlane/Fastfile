@@ -30,8 +30,7 @@ platform :ios do
     )
 
     xcov(
-      output_directory: "xcov_output",
-      json_report: true
+      output_directory: "xcov_output"
     )
   end
 
@@ -48,7 +47,6 @@ platform :ios do
 
     xcov(
       output_directory: "xcov_output"
-      json_report: true
     )
   end
 end

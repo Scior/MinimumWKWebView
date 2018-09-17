@@ -15,7 +15,7 @@ addons:
 
 script: 
   - fastlane coverage
-  - bash utils/xccov-to-sonarqube-generic.sh Build/Logs/Test/*.xccovarchive/ > sonarqube-generic-coverage.xml
+  - bash utils/xccov-to-sonarqube-generic.sh Build/Logs/Test/*.xccovarchive > sonarqube-generic-coverage.xml
   - sonar-scanner -X
 
 branches:
