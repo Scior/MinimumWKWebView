@@ -28,11 +28,13 @@ platform :ios do
 
     slather(
       proj: "MinimumWKWebView.xcodeproj",
-      scheme: "MinimumWKWebView"
+      scheme: "MinimumWKWebView",
+      build_directory: "Build"
     )
 
     xcov(
-      output_directory: "xcov_output"
+      output_directory: "xcov_output",
+      derived_data_path: "Build"
     )
   end
 
@@ -43,12 +45,14 @@ platform :ios do
     slather(
       proj: "MinimumWKWebView.xcodeproj",
       scheme: "MinimumWKWebView",
+      build_directory: "Build",
       travis: true,
       coveralls: true
     )
 
     xcov(
-      output_directory: "xcov_output"
+      output_directory: "xcov_output",
+      derived_data_path: "Build"
     )
   end
 end
