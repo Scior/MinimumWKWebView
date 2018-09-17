@@ -17,7 +17,9 @@ default_platform(:ios)
 platform :ios do
   desc "Test"
   lane :test do
-    scan
+    scan(
+      derived_data_path: "Build"
+    )
   end
 
   desc "Local test with coverage"
