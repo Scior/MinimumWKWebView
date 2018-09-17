@@ -12,6 +12,7 @@ import WebKit
 class WKWViewController: UIViewController, WKNavigationDelegate {
     
     var wkWebView = WKWebView()
+    private let websiteURL = "https://www.yahoo.co.jp/";
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,17 +20,12 @@ class WKWViewController: UIViewController, WKNavigationDelegate {
         wkWebView.navigationDelegate = self
         wkWebView.frame = view.frame
         
-        if let url = URL(string: "https://www.yahoo.co.jp/") {
+        if let url = URL(string: websiteURL) {
             let request = URLRequest(url: url)
             wkWebView.load(request)
         }
         
         view.addSubview(wkWebView)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
