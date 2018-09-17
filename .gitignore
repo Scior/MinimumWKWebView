@@ -75,3 +75,4 @@ fastlane/test_output
 vendor/
 .scannerwork/
 bw-output/
+xcov_output/

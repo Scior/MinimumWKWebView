@@ -10,7 +10,7 @@
 #     https://docs.fastlane.tools/plugins/available-plugins
 #
 
-update_fastlane
+# update_fastlane
 
 default_platform(:ios)
 
@@ -28,6 +28,11 @@ platform :ios do
       proj: "MinimumWKWebView.xcodeproj",
       scheme: "MinimumWKWebView"
     )
+
+    xcov(
+      output_directory: "xcov_output",
+      json_report: true
+    )
   end
 
   desc "CI test with coverage"
@@ -39,6 +44,11 @@ platform :ios do
       scheme: "MinimumWKWebView",
       travis: true,
       coveralls: true
+    )
+
+    xcov(
+      output_directory: "xcov_output"
+      json_report: true
     )
   end
 end
