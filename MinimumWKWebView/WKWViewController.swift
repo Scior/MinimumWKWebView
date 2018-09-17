@@ -12,18 +12,12 @@ import WebKit
 class WKWViewController: UIViewController, WKNavigationDelegate {
     
     var wkWebView = WKWebView()
-    private let websiteURL = "https://www.yahoo.co.jp/";
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         wkWebView.navigationDelegate = self
         wkWebView.frame = view.frame
-        
-        if let url = URL(string: websiteURL) {
-            let request = URLRequest(url: url)
-            wkWebView.load(request)
-        }
         
         view.addSubview(wkWebView)
     }
