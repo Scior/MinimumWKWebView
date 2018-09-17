@@ -10,14 +10,16 @@
 #     https://docs.fastlane.tools/plugins/available-plugins
 #
 
-update_fastlane
+# update_fastlane
 
 default_platform(:ios)
 
 platform :ios do
   desc "Test"
   lane :test do
-    scan
+    scan(
+      derived_data_path: "Build"
+    )
   end
 
   desc "Local test with coverage"
@@ -26,7 +28,13 @@ platform :ios do
 
     slather(
       proj: "MinimumWKWebView.xcodeproj",
-      scheme: "MinimumWKWebView"
+      scheme: "MinimumWKWebView",
+      build_directory: "Build"
+    )
+
+    xcov(
+      output_directory: "xcov_output",
+      derived_data_path: "Build"
     )
   end
 
@@ -37,8 +45,14 @@ platform :ios do
     slather(
       proj: "MinimumWKWebView.xcodeproj",
       scheme: "MinimumWKWebView",
+      build_directory: "Build",
       travis: true,
       coveralls: true
+    )
+
+    xcov(
+      output_directory: "xcov_output",
+      derived_data_path: "Build"
     )
   end
 end

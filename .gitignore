@@ -73,3 +73,6 @@ fastlane/test_output
 # bundle
 .bundle
 vendor/
+.scannerwork/
+bw-output/
+xcov_output/
