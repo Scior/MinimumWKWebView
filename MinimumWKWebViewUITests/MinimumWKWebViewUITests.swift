@@ -28,4 +28,11 @@ class MinimumWKWebViewUITests: XCTestCase {
         super.tearDown()
     }
     
+    // MARK: - Tests
+    
+    func testLaunchApplication() {
+        // Empty test...
+        _ = XCUIApplication()
+    }
+    
 }

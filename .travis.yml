@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode9.4
+osx_image: xcode10
 dist: trusty
 
 cache:
@@ -15,7 +15,6 @@ addons:
 
 script: 
   - fastlane coverage
-  - bash utils/xccov-to-sonarqube-generic.sh Build/Logs/Test/*.xccovarchive > sonarqube-generic-coverage.xml
   - sonar-scanner -X
 
 branches:

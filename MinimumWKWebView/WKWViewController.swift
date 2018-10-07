@@ -19,17 +19,7 @@ class WKWViewController: UIViewController, WKNavigationDelegate {
         wkWebView.navigationDelegate = self
         wkWebView.frame = view.frame
         
-        if let url = URL(string: "https://www.yahoo.co.jp/") {
-            let request = URLRequest(url: url)
-            wkWebView.load(request)
-        }
-        
         view.addSubview(wkWebView)
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
