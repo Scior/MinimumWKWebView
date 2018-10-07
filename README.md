@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/Scior/MinimumWKWebView.svg?branch=master)](https://travis-ci.org/Scior/MinimumWKWebView)
 [![Coverage Status](https://coveralls.io/repos/github/Scior/MinimumWKWebView/badge.svg)](https://coveralls.io/github/Scior/MinimumWKWebView)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=Scior_MinimumWKWebView&metric=vulnerabilities)](https://sonarcloud.io/api/project_badges/measure?project=Scior_MinimumWKWebView&metric=vulnerabilities)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Scior_MinimumWKWebView&metric=bugs)](https://sonarcloud.io/api/project_badges/measure?project=Scior_MinimumWKWebView&metric=bugs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## SwiftLint
