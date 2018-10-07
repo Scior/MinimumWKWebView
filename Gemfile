@@ -4,3 +4,4 @@ gem "fastlane"
 gem "slather"
 gem "xcov"
 gem 'danger'
+gem 'danger-swiftlint'
