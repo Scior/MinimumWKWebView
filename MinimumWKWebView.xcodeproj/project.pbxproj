@@ -14,6 +14,7 @@
 		6BA3181720F9A91600CF961B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BA3181520F9A91600CF961B /* LaunchScreen.storyboard */; };
 		6BA3182220F9A91600CF961B /* MinimumWKWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3182120F9A91600CF961B /* MinimumWKWebViewTests.swift */; };
 		6BA3182D20F9A91600CF961B /* MinimumWKWebViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3182C20F9A91600CF961B /* MinimumWKWebViewUITests.swift */; };
+		6BA8527D216A152700398BE6 /* WKWViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA8527C216A152700398BE6 /* WKWViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		6BA3182820F9A91600CF961B /* MinimumWKWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MinimumWKWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BA3182C20F9A91600CF961B /* MinimumWKWebViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumWKWebViewUITests.swift; sourceTree = "<group>"; };
 		6BA3182E20F9A91600CF961B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BA8527C216A152700398BE6 /* WKWViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 		6BA3182020F9A91600CF961B /* MinimumWKWebViewTests */ = {
 			isa = PBXGroup;
 			children = (
+				6BA8527C216A152700398BE6 /* WKWViewControllerTests.swift */,
 				6BA3182120F9A91600CF961B /* MinimumWKWebViewTests.swift */,
 				6BA3182320F9A91600CF961B /* Info.plist */,
 			);
@@ -194,13 +197,16 @@
 				TargetAttributes = {
 					6BA3180820F9A91400CF961B = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1000;
 					};
 					6BA3181C20F9A91600CF961B = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1000;
 						TestTargetID = 6BA3180820F9A91400CF961B;
 					};
 					6BA3182720F9A91600CF961B = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 1000;
 						TestTargetID = 6BA3180820F9A91400CF961B;
 					};
 				};
@@ -284,6 +290,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BA3182220F9A91600CF961B /* MinimumWKWebViewTests.swift in Sources */,
+				6BA8527D216A152700398BE6 /* WKWViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +464,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.flyingalpaca.MinimumWKWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -475,7 +482,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.flyingalpaca.MinimumWKWebView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -495,7 +502,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.flyingalpaca.MinimumWKWebViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MinimumWKWebView.app/MinimumWKWebView";
 			};
@@ -516,7 +523,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.flyingalpaca.MinimumWKWebViewTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MinimumWKWebView.app/MinimumWKWebView";
 			};
@@ -536,7 +543,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.flyingalpaca.MinimumWKWebViewUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MinimumWKWebView;
 			};
@@ -556,7 +563,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.flyingalpaca.MinimumWKWebViewUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = MinimumWKWebView;
 			};
