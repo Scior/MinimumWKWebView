@@ -15,6 +15,8 @@
 		6BA3182220F9A91600CF961B /* MinimumWKWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3182120F9A91600CF961B /* MinimumWKWebViewTests.swift */; };
 		6BA3182D20F9A91600CF961B /* MinimumWKWebViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA3182C20F9A91600CF961B /* MinimumWKWebViewUITests.swift */; };
 		6BA8527D216A152700398BE6 /* WKWViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA8527C216A152700398BE6 /* WKWViewControllerTests.swift */; };
+		6BA8527F216A253600398BE6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA8527E216A253600398BE6 /* main.swift */; };
+		6BA85281216A27DC00398BE6 /* TestAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BA85280216A27DC00398BE6 /* TestAppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		6BA3182C20F9A91600CF961B /* MinimumWKWebViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumWKWebViewUITests.swift; sourceTree = "<group>"; };
 		6BA3182E20F9A91600CF961B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6BA8527C216A152700398BE6 /* WKWViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WKWViewControllerTests.swift; sourceTree = "<group>"; };
+		6BA8527E216A253600398BE6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6BA85280216A27DC00398BE6 /* TestAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestAppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 				6BA3181320F9A91600CF961B /* Assets.xcassets */,
 				6BA3181520F9A91600CF961B /* LaunchScreen.storyboard */,
 				6BA3181820F9A91600CF961B /* Info.plist */,
+				6BA8527E216A253600398BE6 /* main.swift */,
+				6BA85280216A27DC00398BE6 /* TestAppDelegate.swift */,
 			);
 			path = MinimumWKWebView;
 			sourceTree = "<group>";
@@ -271,7 +277,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint autocorrect\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -280,6 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6BA85281216A27DC00398BE6 /* TestAppDelegate.swift in Sources */,
+				6BA8527F216A253600398BE6 /* main.swift in Sources */,
 				6BA3180F20F9A91400CF961B /* WKWViewController.swift in Sources */,
 				6BA3180D20F9A91400CF961B /* AppDelegate.swift in Sources */,
 			);
