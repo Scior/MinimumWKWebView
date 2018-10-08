@@ -76,3 +76,4 @@ vendor/
 .scannerwork/
 bw-output/
 xcov_output/
+sonarqube-generic-coverage.xml
