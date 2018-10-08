@@ -1,5 +1,5 @@
 disabled_rules:
-- trailing_whitespace
+- trailing_whitespace # noisy
 
 opt_in_rules:
 - attributes

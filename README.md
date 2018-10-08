@@ -6,6 +6,18 @@
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=Scior_MinimumWKWebView&metric=bugs)](https://sonarcloud.io/api/project_badges/measure?project=Scior_MinimumWKWebView&metric=bugs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Hoge
+
+hoge  
+hoge  
+hoge  
+hoge  
+hoge  
+hoge  
+hoge  
+hoge  
+hoge  
+
 ## SwiftLint
 
 <https://github.com/realm/SwiftLint>
